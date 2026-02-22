@@ -1,0 +1,51 @@
+# ----------------------
+# Global
+# ----------------------
+.DS_Store
+*.log
+*.pem
+
+# ----------------------
+# Environment
+# ----------------------
+.env
+.env.*
+!.env.example
+
+# ----------------------
+# Frontend (Next.js)
+# ----------------------
+frontend/node_modules
+frontend/.next
+frontend/out
+frontend/build
+frontend/coverage
+frontend/*.tsbuildinfo
+frontend/next-env.d.ts
+
+# logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.pnpm-debug.log*
+
+# vercel
+frontend/.vercel
+
+# ----------------------
+# Backend (FastAPI)
+# ----------------------
+backend/__pycache__/
+backend/*.pyc
+backend/.venv
+backend/venv
+backend/.env
+
+
+# ----------------------
+# Docker
+# ----------------------
+docker/*.env
+
+.vscode
+draft.md
