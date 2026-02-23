@@ -1,2 +1,14 @@
-def chunk_text(text: str):
-    return [chunk.strip() for chunk in text.split("\n") if chunk.strip()]
+def chunk_pages(pages):
+    chunks = []
+
+    for page in pages:
+        lines = page["text"].split("\n")
+
+        for line in lines:
+            if line.strip():
+                chunks.append({
+                    "text": line.strip(),
+                    "page_number": page["page_number"]
+                })
+
+    return chunks
