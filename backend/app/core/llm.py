@@ -7,8 +7,9 @@ def call_llm(prompt: str):
     response = client.models.generate_content(
         model="gemini-2.5-flash",
         config={
-            "system_instruction": "You are a legal contract analyzer.",
-            "temperature": 0.2,
+            "system_instruction": "You are a legal contract analyzer. Return strictly valid JSON.",
+            "temperature": 0.1,
+            "response_mime_type": "application/json", # <--- This is key
         },
         contents=prompt
     )
