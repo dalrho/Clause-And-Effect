@@ -8,7 +8,7 @@ The **Contract Intelligence Analyzer** uses advanced OCR and LLMs to transform d
 Most people sign contracts based on trust or exhaustion, not understanding. Fine print often hides predatory clauses that only become visible when things go wrong.
 
 ## Status: Work in Progress
-    Current Sprint: Implementing the API endpoints and configuring the database
+Current Sprint: Working on the simulation
 
 ## Development Roadmap
 A roadmap shows you have a plan. Use standard Markdown checkboxes to show progress:
