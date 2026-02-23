@@ -13,12 +13,11 @@ def analyze(contract_id: str):
     if not data:
         raise HTTPException(status_code=404, detail="Contract not found")
 
-    pages = extract_text_with_pages(data["path"])
-    chunks = chunk_pages(pages)
+    # Pass the file path directly to our new semantic chunker
+    chunks = chunk_pages(data["path"])
 
-    # Instead of a loop, send the first 20 chunks as one batch
-    # This counts as 1 API call, staying well under the 5 RPM limit
-    results = analyze_multiple_clauses(chunks[:20])
+    # Since we grouped logically, the total chunks will likely be < 15
+    results = analyze_multiple_clauses(chunks)
 
     fake_db[contract_id]["analysis"] = results
     return {"contract_id": contract_id, "clauses": results}
