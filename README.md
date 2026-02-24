@@ -11,18 +11,16 @@ Most people sign contracts based on trust or exhaustion, not understanding. Fine
 Current Sprint: Working on the simulation
 
 ## Development Roadmap
-A roadmap shows you have a plan. Use standard Markdown checkboxes to show progress:
 
 - [x] Phase 1: Ingestion - PDF to Text via OCR (Completed)
 
-- [ ] Phase 2: Risk Mapping - Prompt engineering for "1-sentence risk" and "Heatmap" generation.
+- [x] Phase 2: Risk Mapping - Prompt engineering for "1-sentence risk" and "Heatmap" generation.
 
 - [ ] Phase 3: The Simulator - Developing the "Counterfactual" logic engine.
 
 - [ ] Phase 4: UI/UX - Building the Next.js dashboard for visual risk heatmaps.
 
 ## Known Challenges
-Be transparent about what you’re still solving. It makes you look like a more sophisticated engineer.
 
 - **Context Window Management**: Handling 100+ page contracts without losing the "thread."
 
